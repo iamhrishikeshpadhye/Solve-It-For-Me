@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test 1</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<canvas class="background"></canvas>
+<script src="node_modules/particlesjs/dist/particles.min.js"></script>
+<script type="text/javascript">
+	var particles = Particles.init({
+		selector: '.background',
+  		maxParticles: 300,
+  		minDistance: 110,
+  		speed: 1.5,
+		color: ['#0dff00','#ff0000'],
+		connectParticles: true
+	});
+</script>
+
+<body>
+<header>
+	<a href="index.html"><img id="logo" src="images/logo.gif" alt="Solve It For Me"></a>
+</header>
+<div class="container">
+</div>
+</body>
+</html>
