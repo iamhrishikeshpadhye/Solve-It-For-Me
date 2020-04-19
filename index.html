@@ -1,27 +1,117 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Test 1</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<canvas class="background"></canvas>
-<script src="node_modules/particlesjs/dist/particles.min.js"></script>
-<script type="text/javascript">
-	var particles = Particles.init({
-		selector: '.background',
-  		maxParticles: 300,
-  		minDistance: 110,
-  		speed: 1.5,
-		color: ['#0dff00','#ff0000'],
-		connectParticles: true
-	});
-</script>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>SIFMe</title>
 
-<body>
-<header>
-	<a href="index.html"><img id="logo" src="images/logo.gif" alt="Solve It For Me"></a>
-</header>
-<div class="container">
-</div>
-</body>
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="site-content">
+			<header class="hero" data-bg-image="images/math.jpg">
+				<div class="imgbox">
+				    <img class="center-fit" src="images/logo.gif">
+				</div>
+				<h1 id="main-subhead"><strong>Simple and Quick</strong><br>solution to equations</h1>
+				<div class="container">
+					<div class="hero-content">
+						<div class="feature">
+							<h3 class="feature-title">Enter the equation to solve</h3>
+							<form class="subscribe-form">
+								<input type="text" placeholder="e.g. x^2+4x+4">
+								<input type="submit" value="SIFMe">
+							</form>
+						</div>
+					</div>
+					<div>
+						<div class="feature">
+							<div class="feature-icon"><img src="images/icon-AR.png" alt="AR" class="icon"></div>
+							<h3 class="feature-title">AR magic</h3>
+							<p>'AR magic' gives you a real-time visual solution to your equation <br>(needs camera permissions)</p>
+						</div>
+					</div>
+						
+					<div>
+						<div class="feature">
+							<div class="feature-icon"><img src="images/icon-imageupload.png" alt="" class="icon"></div>
+							<h3 class="feature-title">Upload image</h3>
+							<p>Upload the image containing the equation to solve.<br>(jpg/png)</p>
+						</div>
+					</div>
+				</div>
+			</header> <!-- hero -->
+
+			<main class="main-content">
+				<div class="fullwidth-block" data-bg-color="#e6e6e6">
+					<div class="container">
+						<h2 class="section-title">Frequently asked questions</h2>
+						<small class="section-subtitle">Laboriosam nisi aliquid commodi dolor</small>
+
+						<div class="row">
+							<div class="col-md-4">
+								<dl>
+									<dt>Excepteur sint occaecat cupidatat?</dt>
+									<dd>Natus error voluptatem doloremque laudantium totam rem aperiam, eaque ipsa quae inventore veritatis et quasi architecto beatae vitae dicta explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit consequuntur.</dd>
+
+									<dt>Excepteur sint occaecat cupidatat?</dt>
+									<dd>Natus error voluptatem doloremque laudantium totam rem aperiam, eaque ipsa quae inventore veritatis et quasi architecto beatae vitae dicta explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit consequuntur.</dd>
+								</dl>
+							</div>
+							<div class="col-md-4">
+								<dl>
+									<dt>Excepteur sint occaecat cupidatat?</dt>
+									<dd>Natus error voluptatem doloremque laudantium totam rem aperiam, eaque ipsa quae inventore veritatis et quasi architecto beatae vitae dicta explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit consequuntur.</dd>
+
+									<dt>Excepteur sint occaecat cupidatat?</dt>
+									<dd>Natus error voluptatem doloremque laudantium totam rem aperiam, eaque ipsa quae inventore veritatis et quasi architecto beatae vitae dicta explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit consequuntur.</dd>
+								</dl>
+							</div>
+							<div class="col-md-4">
+								<dl>
+									<dt>Excepteur sint occaecat cupidatat?</dt>
+									<dd>Natus error voluptatem doloremque laudantium totam rem aperiam, eaque ipsa quae inventore veritatis et quasi architecto beatae vitae dicta explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit consequuntur.</dd>
+
+									<dt>Excepteur sint occaecat cupidatat?</dt>
+									<dd>Natus error voluptatem doloremque laudantium totam rem aperiam, eaque ipsa quae inventore veritatis et quasi architecto beatae vitae dicta explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit consequuntur.</dd>
+								</dl>
+							</div>
+						</div> <!-- .row -->
+					</div> <!-- .container -->
+				</div> <!-- .fullwidth-block -->
+
+			</main> <!-- .main-content -->
+
+			<footer class="site-footer" data-bg-image="images/math.jpg">
+				<div class="container">
+					<p><strong>Copyright &copy; 2020 by Solve It For Me<br>Designed by Hrishikesh Padhye.<br>All rights reserved</strong></p>
+
+					<div class="social-links">
+						<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+						<a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		
+	</body>
+
 </html>
